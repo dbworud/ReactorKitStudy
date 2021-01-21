@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4FCBEA5725B9B6CF0071FF25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBEA5625B9B6CF0071FF25 /* AppDelegate.swift */; };
 		4FCBEA5925B9B6CF0071FF25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBEA5825B9B6CF0071FF25 /* SceneDelegate.swift */; };
-		4FCBEA5B25B9B6CF0071FF25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBEA5A25B9B6CF0071FF25 /* ViewController.swift */; };
 		4FCBEA5E25B9B6CF0071FF25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCBEA5C25B9B6CF0071FF25 /* Main.storyboard */; };
 		4FCBEA6025B9B6D30071FF25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FCBEA5F25B9B6D30071FF25 /* Assets.xcassets */; };
 		4FCBEA6325B9B6D30071FF25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FCBEA6125B9B6D30071FF25 /* LaunchScreen.storyboard */; };
+		4FCBEA7225B9B8470071FF25 /* FruitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBEA7125B9B8470071FF25 /* FruitViewController.swift */; };
+		4FCBEA7C25B9B9B40071FF25 /* FoodReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBEA7B25B9B9B40071FF25 /* FoodReactor.swift */; };
 		6EF9DBC5C30190B1215EB1F4 /* Pods_ReactorKitStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7152D363214712765F180BA /* Pods_ReactorKitStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +22,12 @@
 		4FCBEA5325B9B6CF0071FF25 /* ReactorKitStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactorKitStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FCBEA5625B9B6CF0071FF25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FCBEA5825B9B6CF0071FF25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4FCBEA5A25B9B6CF0071FF25 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4FCBEA5D25B9B6CF0071FF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4FCBEA5F25B9B6D30071FF25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FCBEA6225B9B6D30071FF25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FCBEA6425B9B6D30071FF25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FCBEA7125B9B8470071FF25 /* FruitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitViewController.swift; sourceTree = "<group>"; };
+		4FCBEA7B25B9B9B40071FF25 /* FoodReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReactor.swift; sourceTree = "<group>"; };
 		DACD60E5C1388F150720AF4E /* Pods-ReactorKitStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorKitStudy.debug.xcconfig"; path = "Target Support Files/Pods-ReactorKitStudy/Pods-ReactorKitStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		F7152D363214712765F180BA /* Pods_ReactorKitStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactorKitStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -48,7 +50,6 @@
 				DACD60E5C1388F150720AF4E /* Pods-ReactorKitStudy.debug.xcconfig */,
 				3A048BB36E83EE7C320C3AB2 /* Pods-ReactorKitStudy.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,11 +76,12 @@
 			children = (
 				4FCBEA5625B9B6CF0071FF25 /* AppDelegate.swift */,
 				4FCBEA5825B9B6CF0071FF25 /* SceneDelegate.swift */,
-				4FCBEA5A25B9B6CF0071FF25 /* ViewController.swift */,
 				4FCBEA5C25B9B6CF0071FF25 /* Main.storyboard */,
 				4FCBEA5F25B9B6D30071FF25 /* Assets.xcassets */,
 				4FCBEA6125B9B6D30071FF25 /* LaunchScreen.storyboard */,
 				4FCBEA6425B9B6D30071FF25 /* Info.plist */,
+				4FCBEA7125B9B8470071FF25 /* FruitViewController.swift */,
+				4FCBEA7B25B9B9B40071FF25 /* FoodReactor.swift */,
 			);
 			path = ReactorKitStudy;
 			sourceTree = "<group>";
@@ -206,9 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4FCBEA5B25B9B6CF0071FF25 /* ViewController.swift in Sources */,
+				4FCBEA7C25B9B9B40071FF25 /* FoodReactor.swift in Sources */,
 				4FCBEA5725B9B6CF0071FF25 /* AppDelegate.swift in Sources */,
 				4FCBEA5925B9B6CF0071FF25 /* SceneDelegate.swift in Sources */,
+				4FCBEA7225B9B8470071FF25 /* FruitViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,4 +8,6 @@ target 'ReactorKitStudy' do
   # Pods for ReactorKitStudy
 
     pod 'ReactorKit'
+    pod 'RxCocoa'
+	
 end

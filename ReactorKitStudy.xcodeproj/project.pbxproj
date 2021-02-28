@@ -15,6 +15,10 @@
 		4FCBEA7C25B9B9B40071FF25 /* FoodReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FCBEA7B25B9B9B40071FF25 /* FoodReactor.swift */; };
 		4FED872825EB345300043052 /* CounterReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED872725EB345300043052 /* CounterReactor.swift */; };
 		4FED872C25EB345C00043052 /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED872B25EB345C00043052 /* CounterViewController.swift */; };
+		4FED873225EB3DC200043052 /* GithubSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED873125EB3DC200043052 /* GithubSearchViewController.swift */; };
+		4FED873625EB3DCE00043052 /* GithubSearchReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED873525EB3DCE00043052 /* GithubSearchReactor.swift */; };
+		4FED87BB25EB744400043052 /* GithubSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED87BA25EB744400043052 /* GithubSearchCell.swift */; };
+		4FED87BE25EB78A700043052 /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FED87BD25EB78A700043052 /* SearchService.swift */; };
 		6EF9DBC5C30190B1215EB1F4 /* Pods_ReactorKitStudy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7152D363214712765F180BA /* Pods_ReactorKitStudy.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +34,10 @@
 		4FCBEA7B25B9B9B40071FF25 /* FoodReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodReactor.swift; sourceTree = "<group>"; };
 		4FED872725EB345300043052 /* CounterReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterReactor.swift; sourceTree = "<group>"; };
 		4FED872B25EB345C00043052 /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
+		4FED873125EB3DC200043052 /* GithubSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchViewController.swift; sourceTree = "<group>"; };
+		4FED873525EB3DCE00043052 /* GithubSearchReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchReactor.swift; sourceTree = "<group>"; };
+		4FED87BA25EB744400043052 /* GithubSearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubSearchCell.swift; sourceTree = "<group>"; };
+		4FED87BD25EB78A700043052 /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		DACD60E5C1388F150720AF4E /* Pods-ReactorKitStudy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorKitStudy.debug.xcconfig"; path = "Target Support Files/Pods-ReactorKitStudy/Pods-ReactorKitStudy.debug.xcconfig"; sourceTree = "<group>"; };
 		F7152D363214712765F180BA /* Pods_ReactorKitStudy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactorKitStudy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -76,6 +84,7 @@
 		4FCBEA5525B9B6CF0071FF25 /* ReactorKitStudy */ = {
 			isa = PBXGroup;
 			children = (
+				4FED873025EB3DAF00043052 /* GithubSearch */,
 				4FED872625EB344600043052 /* Counter */,
 				4FED872125EB323F00043052 /* SupportingFiles */,
 				4FED871E25EB31DA00043052 /* FoodReactor */,
@@ -111,6 +120,17 @@
 				4FED872B25EB345C00043052 /* CounterViewController.swift */,
 			);
 			path = Counter;
+			sourceTree = "<group>";
+		};
+		4FED873025EB3DAF00043052 /* GithubSearch */ = {
+			isa = PBXGroup;
+			children = (
+				4FED873125EB3DC200043052 /* GithubSearchViewController.swift */,
+				4FED873525EB3DCE00043052 /* GithubSearchReactor.swift */,
+				4FED87BA25EB744400043052 /* GithubSearchCell.swift */,
+				4FED87BD25EB78A700043052 /* SearchService.swift */,
+			);
+			path = GithubSearch;
 			sourceTree = "<group>";
 		};
 		9DD72E62A60C66BEBF35B7E6 /* Frameworks */ = {
@@ -234,10 +254,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FED873225EB3DC200043052 /* GithubSearchViewController.swift in Sources */,
 				4FCBEA7C25B9B9B40071FF25 /* FoodReactor.swift in Sources */,
+				4FED87BB25EB744400043052 /* GithubSearchCell.swift in Sources */,
 				4FED872825EB345300043052 /* CounterReactor.swift in Sources */,
 				4FCBEA5725B9B6CF0071FF25 /* AppDelegate.swift in Sources */,
 				4FED872C25EB345C00043052 /* CounterViewController.swift in Sources */,
+				4FED873625EB3DCE00043052 /* GithubSearchReactor.swift in Sources */,
+				4FED87BE25EB78A700043052 /* SearchService.swift in Sources */,
 				4FCBEA5925B9B6CF0071FF25 /* SceneDelegate.swift in Sources */,
 				4FCBEA7225B9B8470071FF25 /* FruitViewController.swift in Sources */,
 			);

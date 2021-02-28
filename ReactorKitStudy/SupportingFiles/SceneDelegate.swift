@@ -18,8 +18,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let scene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: scene)
-        window?.rootViewController = CounterViewController()
+        let rootViewController = UINavigationController(rootViewController: GithubSearchViewController())
+        window?.rootViewController = rootViewController
         window?.makeKeyAndVisible()
+        
+//        let navigationController = self.window?.rootViewController as! UINavigationController
+//        navigationController.navigationBar.prefersLargeTitles = true
+//        let viewController = navigationController.viewControllers.first as! GithubSearchViewController
+//        viewController.reactor = GithubSearchReactor()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

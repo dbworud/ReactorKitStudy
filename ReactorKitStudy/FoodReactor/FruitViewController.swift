@@ -69,6 +69,8 @@ class FruitViewController: UIViewController {
     
     // MARK: Helpers
     func bind(reactor: FruitReactor) {
+        
+        // MARK: Action Bind
         appleButton.rx.tap.map { // Whenever appleButton tapped
             FruitReactor.Action.apple // get value from stream
         }
@@ -87,7 +89,7 @@ class FruitViewController: UIViewController {
         .bind(to: reactor.action)
         .disposed(by: disposeBag)
         
-        
+        // MARK: State Bind
         reactor.state.map { $0.fruitName }
             .distinctUntilChanged()
             .map { $0 }

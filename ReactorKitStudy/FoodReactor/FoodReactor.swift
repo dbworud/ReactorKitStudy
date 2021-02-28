@@ -44,21 +44,24 @@ class FruitReactor: Reactor {
         case .apple:
             return Observable.concat([ // 여러 Sequence를 묶는다; 첫 번째 Sequence가 완료될 때까지 구독하고 다음 Sequence를 같은 방법으로 구독한다
                 Observable.just(Mutation.setLoading(true)),
-                Observable.just(Mutation.changeLabelApple).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.changeLabelApple)
+                    .delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
             
         case .banana:
             return Observable.concat([ // 여러 Sequence를 묶는다; 첫 번째 Sequence가 완료될 때까지 구독하고 다음 Sequence를 같은 방법으로 구독한다
                 Observable.just(Mutation.setLoading(true)),
-                Observable.just(Mutation.changeLabelBanana).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.changeLabelBanana)
+                    .delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
             
         case .grapes:
             return Observable.concat([ // 여러 Sequence를 묶는다; 첫 번째 Sequence가 완료될 때까지 구독하고 다음 Sequence를 같은 방법으로 구독한다
                 Observable.just(Mutation.setLoading(true)),
-                Observable.just(Mutation.changeLabelGrapes).delay(.milliseconds(500), scheduler: MainScheduler.instance),
+                Observable.just(Mutation.changeLabelGrapes)
+                    .delay(.milliseconds(500), scheduler: MainScheduler.instance),
                 Observable.just(Mutation.setLoading(false))
             ])
         }
